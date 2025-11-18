@@ -1,5 +1,17 @@
 {
   "dependencies": {
-    "express": "^5.1.0"
-  }
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11"
+  },
+  "name": "interval_schedule",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
