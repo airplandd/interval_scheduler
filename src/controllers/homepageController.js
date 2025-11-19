@@ -1,10 +1,7 @@
 const topicModel = require("../models/topicModel")
 
 const getHomepage = async (req, res) => {
-  let data = {
-    title: "Homepage",
-    rows: []
-  }
+
 
   const local = new Date()
   const date = `${local.getDate()}-${local.getMonth()}-${local.getFullYear()}`
@@ -13,12 +10,14 @@ const getHomepage = async (req, res) => {
       date: date,
     }
   }).then((value) => {
-    data.rows = value
+    const data = {
+      title: "Homepage",
+      rows: value
+    }
+    res.render("index", data)
   })
 
-  console.log(data)
-
-  res.render("index", data)
+  res.status(500)
 }
 
 module.exports = {
