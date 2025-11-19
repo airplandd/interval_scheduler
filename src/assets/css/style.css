@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "daniel";
+  src: url("../fonts/Phrygia-elvB.ttf");
+}
+
+* {
+  font-family: "daniel";
+}
+
+html {
+  background-color: black;
+}
+
+.topic {
+  margin: 10px 0 10px 0;
+}
