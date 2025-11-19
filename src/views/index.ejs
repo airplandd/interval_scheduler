@@ -7,10 +7,20 @@
   <title>
     <%= title %>
   </title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <a href="/topic_form">Add new event</a>
+  <ul>
+    <% rows.forEach((item)=> { %>
+      <li class="topic">
+        <a href=<%=`/topics/${item.id}`%>>
+          <%= item.name %>
+        </a>
+        <% }); %>
+      </li>
+  </ul>
 </body>
 
 </html>
