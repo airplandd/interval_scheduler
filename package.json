@@ -1,8 +1,12 @@
 {
   "dependencies": {
+    "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.11",
+    "sequelize": "^6.37.7",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   },
   "name": "interval_schedule",
   "version": "1.0.0",
