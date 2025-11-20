@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <h1>How did the session go?</h1>
+  <form action=<%=`/topics/${topicid}`%> method="POST">
+    <div>
+      <label for="perfect">Perfect</label>
+      <input type="radio" name="quality" id="perfect" value="perfect">
+
+      <label for="good">Good</label>
+      <input type="radio" name="quality" id="good" value="good">
+
+      <label for="bad">Bad</label>
+      <input type="radio" name="quality" id="bad" value="bad">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
