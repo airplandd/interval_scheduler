@@ -4,7 +4,7 @@ const getHomepage = async (req, res) => {
 
 
   const local = new Date()
-  const date = `${local.getDate()}-${local.getMonth()}-${local.getFullYear()}`
+  const date = `${local.getDate()}-${local.getMonth() + 1}-${local.getFullYear()}`
   await topicModel.findAll({
     where: {
       date: date,
