@@ -21,6 +21,7 @@ router.get("/", homepageController.getHomepage);
 router.get("/topic_form", topicController.getTopicForm)
 router.post("/topics", topicController.createTopic)
 router.get("/topics/:topicid", topicController.getTopicPage)
+router.post("/topics/:topicid", topicController.scheduleNewTopic)
 
 app.use(router)
 sequelize.sync().then(() => {
