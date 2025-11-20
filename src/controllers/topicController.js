@@ -63,7 +63,7 @@ const addDate = (topicDate, numofdays) => {
 
 const createNewTopicBasedOnLevel = (power, value) => {
   const newDate = addDate(value.date, Math.pow(power, value.level))
-  const level = value.level + 1 >= 7 ? 7 : value.level + 1
+  const level = value.level + 1 >= 4 ? 4 : value.level + 1
   topicModel.create({
     name: value.name,
     date: `${newDate.getDate()}-${newDate.getMonth() + 1}-${newDate.getFullYear()}`,
