@@ -12,7 +12,7 @@ const createTopic = (req, res) => {
   const topicName = req.body.topic_name
   const local = new Date();
   const date = `${local.getDate()}-${local.getMonth() + 1}-${local.getFullYear()}`
-  topicModel.create({ name: topicName, date, level: 1 })
+  topicModel.create({ name: topicName, date, level: 0 })
   res.redirect("/")
 
 }
